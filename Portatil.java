@@ -42,17 +42,13 @@ public class Portatil {
     }
     
     public void imprimirTodosLosDetalles() {
-        String estaEncendido = "no";
-        if (encendido == true) {
-            estaEncendido = "si";
-        }
-        System.out.println("Propietario: " + propietario + " | Porcentaje de batería actual: " + porcentajeBateria + " | Ordenador encendido: " + estaEncendido);
+        System.out.println(getTodosLosDetalles());
     }
     
     public String getTodosLosDetalles() {
-        String estaEncendido = "si";
-        if (encendido == false) {
-            estaEncendido = "no";
+        String estaEncendido = "no";
+        if (encendido == true) {
+            estaEncendido = "si";
         }
         String todosLosDetalles = "Propietario: " + propietario + " | Porcentaje de batería actual: " + porcentajeBateria + " | Ordenador encendido: " + estaEncendido;
         return todosLosDetalles;
