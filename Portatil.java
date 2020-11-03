@@ -6,7 +6,7 @@ public class Portatil {
     //El portatil está encendido o no.
     private boolean encendido; 
     
-    //Este es el método constructor, el cual inicializa los atributos.
+    //Este es el constructor, el cual inicializa los atributos.
     public Portatil(String propietarioActual, int bateria) {
         propietario = propietarioActual;
         porcentajeBateria = bateria;
